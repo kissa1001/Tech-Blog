@@ -12,9 +12,11 @@ blogsStore.onChange(getBlogsCallback);
 
 module.exports = React.createClass({
     render: function() {
-        return <div>
-            <nav />
-            <BlogList blogs={_blogs} />
-        </div>
+        return (
+        	<div>
+            	<nav />
+            	<BlogList blogs={_blogs} />
+        	</div>
+        )
     }
 });
