@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-var Blog = require("../data/blog");
+var Blog = require("../blog");
 var _ = require("underscore");
 
 var router = require("express").Router();
