@@ -5,15 +5,18 @@ var IndexLink = require('react-router').IndexLink;
 module.exports = React.createClass({
   render:function(){
     return(
-      	<div className="navbar navbar-default">
-        	<div className="container-fluid">
-            	<div className="navbar-header navbar-brand">
-                    <IndexLink to="/">Devblogs</IndexLink>
+      	<div className="navbar">
+        	<div className="container">
+            	<div className="navbar-header">
+                    <p className="navbar-brand">DevBlogs</p>
             	</div>
             	<ul className="nav navbar-nav">
-            		<li><Link to="/blogs">Blogs</Link></li>
-            		<li><Link to="/add">Add Blog</Link></li>
+                    <li><IndexLink to="/">Home</IndexLink></li>
             	</ul>
+                <ul className="nav navbar-nav navbar-right">
+                    <li><Link to="/blogs">Blogs</Link></li>
+                    <li><Link to="/add">Add Blog</Link></li>
+                </ul>
         	</div>
     	</div>
     )

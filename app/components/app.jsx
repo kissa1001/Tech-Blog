@@ -10,7 +10,9 @@ module.exports = React.createClass({
                 <div className = "row">
             	   <Navbar />
                 </div>
-                {this.props.children}
+                <div className="content">
+                    {this.props.children}
+                </div>
         	</div>
         )
     }

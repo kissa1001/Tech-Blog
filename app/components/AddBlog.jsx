@@ -36,7 +36,7 @@ module.exports = React.createClass({
                     <textarea className="form-control" rows="5" id="content" name="content" value={this.state.content} onChange={this.handleInputChange} placeholder="Blog Content"></textarea>
                 </div>
                 <div className="form-group">
-                    <button className="btn" type="submit">Add Blog</button>
+                    <button className="btn btn-success" type="submit">Add Blog</button>
                 </div>
             </form>
         )

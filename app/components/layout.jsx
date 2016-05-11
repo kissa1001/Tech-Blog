@@ -5,6 +5,7 @@ var Navbar = require('./navbar.jsx');
 var BlogList = require("./BlogList.jsx");
 var AddBlog = require("./AddBlog.jsx");
 var blogsStore = require("../stores/blogsStore");
+
 var _blogs = [];
 var getBlogsCallback = function(blogs){
 	_.forEach(blogs,function(blog){
@@ -20,13 +21,11 @@ module.exports = React.createClass({
     render: function() {
         return (
         	<div>
-                <div className = "row">
-                    <div className = "col-md-6">
-                        <AddBlog />
-                    </div>
-                    <div className = "col-md-6">
-            	       <h1>Blogs go here</h1>
-                    </div>
+                <div className = "home text-center">
+                    <h1 className="header">Blog Website Project</h1>
+                    <p className="project-desc">This blog uses  node + express + mongoDB + React.js all of which are exciting,
+                     fast and highly scalable. Here i'm using npm to ease the package management and 
+                     installation issues.</p>
                 </div>
         	</div>
         )

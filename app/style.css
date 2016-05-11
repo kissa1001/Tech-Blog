@@ -1,0 +1,31 @@
+body{
+	background: #B993D6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #B993D6 , #8CA6DB); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #B993D6 , #8CA6DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */           
+}
+
+.home{
+	max-width:800px;
+	margin:5em auto;
+}
+.navbar a{
+	font-size:1.3em;
+	text-decoration: underline;
+	color:#424242;
+}
+.header{
+	color:#424242;
+	font-size: 3em;
+}
+
+.project-desc{
+	margin-top: 2em;
+	color:#424242;
+	font-size: 1.5em;
+}
+
+.form{
+	background: rgba(225,255,255,0.3);
+	color:#424242;
+	padding:3em 4em;
+}

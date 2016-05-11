@@ -1,10 +1,10 @@
 var React = require("react");
-var actions = require("../actions/BlogActions");
+var Actions = require("../actions/BlogActions");
 
 module.exports = React.createClass({
     deleteBlog: function(e){
         e.preventDefault();
-        actions.deleteBlog(this.props.info);
+        Actions.deleteBlog(this.props.info);
     },
     render:function(){
         return(
