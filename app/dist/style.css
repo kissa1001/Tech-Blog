@@ -1,31 +1,74 @@
 body{
-	background: #B993D6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #B993D6 , #8CA6DB); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #B993D6 , #8CA6DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */           
+background: #ECE9E6; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Raleway', sans-serif;
 }
 
 .home{
 	max-width:800px;
 	margin:5em auto;
 }
-.navbar a{
+.home a{
+	color:#58C9B9;
+}
+.home a:hover{
+	color:#424242;
+}
+.footer{
+	margin-top:3em;
+	font-family: 'Raleway', sans-serif;
+}
+.navbar-nav a{
 	font-size:1.3em;
 	text-decoration: underline;
 	color:#424242;
 }
+.navbar-nav a:hover{
+	color:#58C9B9;
+	background:#424242;
+}
+.navbar-nav a:visited{
+	color:#424242;
+	background:#58C9B9;
+}
+.navbar-brand{
+	color:#58C9B9;
+	font-family: 'Droid Serif', serif;
+}
 .header{
 	color:#424242;
 	font-size: 3em;
+	font-family: 'Droid Serif', serif;
 }
 
 .project-desc{
 	margin-top: 2em;
 	color:#424242;
 	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
 }
 
 .form{
-	background: rgba(225,255,255,0.3);
+	background: rgba(0,0,0,0.1);
 	color:#424242;
 	padding:3em 4em;
+	font-family: 'Raleway', sans-serif;
+}
+.delete-button:hover{
+	cursor:pointer;
+}
+body .panel-title{
+	color:#424242;
+	font-size: 1.3em;
+	font-family: 'Droid Serif', serif;
+}
+.tagline{
+	color:#424242;
+	font-size:1em;
+	font-family: 'Raleway', sans-serif;
+}
+.panel-body p{
+	font-size:1.1em;
+	font-family: 'Raleway', sans-serif;
 }

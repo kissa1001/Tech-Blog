@@ -12,6 +12,7 @@ module.exports = React.createClass({
     addBlog:function(e){
         e.preventDefault();
         actions.addBlog(this.state);
+        this.setState(this.getInitialState());
     },
     handleInputChange:function(e){
       e.preventDefault();
@@ -29,7 +30,7 @@ module.exports = React.createClass({
                 </div>
                 <div className="form-group">
                     <label className="control-label" htmlFor="tagline">Tagline:</label>
-                    <input type="text" className="form-control" id="tagline" name="tagline" value={this.state.address} onChange={this.handleInputChange} placeholder="Tagline" />                    
+                    <input type="text" className="form-control" id="tagline" name="tagline" value={this.state.tagline} onChange={this.handleInputChange} placeholder="Tagline" />                    
                 </div>
                 <div className="form-group">
                     <label className="control-label" htmlFor="content">Content:</label>

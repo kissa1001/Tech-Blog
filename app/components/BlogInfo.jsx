@@ -8,23 +8,18 @@ module.exports = React.createClass({
     },
     render:function(){
         return(
-            <div className="panel-group" id="accordion">
-                <div className="panel panel-default">
+            <div className="panel panel-info">
                     <div className="panel-heading">
                         <h4 className="panel-title">
                             {this.props.info.name}
                             <span className="pull-right text-uppercase delete-button" onClick={this.deleteBlog}>&times;</span>
                         </h4>
-                        <p>{this.props.info.tagline}</p>
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse">
-                        Read More</a>
+                        <p className="tagline">{this.props.info.tagline}</p>
+                        <p className="date">{this.props.info.date}</p>
                     </div>
-                    <div id="collapse" className="coll panel-collapse collapse in">
-                        <div className="panel-body">
-                            {this.props.info.content}
-                        </div>
+                    <div className="panel-body">
+                        <p>{this.props.info.content}</p>
                     </div>
-                </div>
             </div>
         )
     }
