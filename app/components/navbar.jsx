@@ -14,8 +14,8 @@ module.exports = React.createClass({
                     <li><IndexLink to="/">Home</IndexLink></li>
             	</ul>
                 <ul className="nav navbar-nav navbar-right">
-                    <li><Link to="/blogs">Blogs</Link></li>
-                    <li><Link to="/add">Add Blog</Link></li>
+                    <li><Link to="/posts">Posts</Link></li>
+                    <li><Link to="/add">Add Post</Link></li>
                 </ul>
         	</div>
     	</div>

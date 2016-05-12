@@ -6,15 +6,15 @@ var browserHistory = require('react-router').browserHistory;
 
 var Layout = require('./components/layout.jsx');
 var Main = require('./components/app.jsx');
-var AddBlog = require('./components/AddBlog.jsx');
-var Blogs = require('./components/BlogList.jsx');
+var AddPost = require('./components/AddBlog.jsx');
+var Posts = require('./components/BlogList.jsx');
 
 module.exports = (
     <Router history={browserHistory}>
         <Route path="/" component={Main}>
         	<IndexRoute component={Layout}></IndexRoute>
-        	<Route path="/blogs" component={Blogs} />
-            <Route path="/add" component={AddBlog} />
+        	<Route path="/posts" component={Posts} />
+            <Route path="/add" component={AddPost} />
         </Route>
     </Router>
 );

@@ -26,7 +26,7 @@ module.exports = React.createClass({
                 </div>
                 <div className="content">
                     {
-                        this.props.children && React.cloneElement(this.props.children, { blogs: _blogs })
+                      this.props.children && React.cloneElement(this.props.children, { blogs: _blogs })
                     }
                 </div>
         	</div>
