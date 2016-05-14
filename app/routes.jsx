@@ -7,7 +7,7 @@ var browserHistory = require('react-router').browserHistory;
 var Layout = require('./components/layout.jsx');
 var Main = require('./components/app.jsx');
 var AddPost = require('./components/AddBlog.jsx');
-var Posts = require('./components/BlogList.jsx');
+var Posts = require('./components/posts.jsx');
 
 module.exports = (
     <Router history={browserHistory}>

@@ -12,7 +12,7 @@ module.exports = React.createClass({
         this.props.blogs.map(function(s,index){
           return(
             <BlogInfo info={s} key={"blog" + index} />
-            )         
+          )         
         })
       }
       </div>
